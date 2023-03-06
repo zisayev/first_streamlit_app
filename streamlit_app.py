@@ -50,3 +50,6 @@ my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
 my_data_rows = my_cur.fetchall()
 streamlit.text("The fruit load list contains:")
 streamlit.text(my_data_rows)
+
+#this will not work correctly but we should see what would be outcome
+my_cur.execute("insert into fruit_load_list values('from streamlit')");
